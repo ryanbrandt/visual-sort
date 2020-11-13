@@ -28,10 +28,11 @@ const SortingAlgorithmSelection = (props: Props) => {
 
   return (
     <div className="sorting_selection-container">
-      {_getSortingAlgorithmChunks().map((algorithmRow) => (
-        <Row>
+      {_getSortingAlgorithmChunks().map((algorithmRow, i) => (
+        <Row key={`${i}_algorithm_row`}>
           {algorithmRow.map((algorithm) => (
             <Button
+              key={`${algorithm}_btn`}
               className="sorting_selection-option"
               title={algorithm}
               onClick={() => setSortingAlgorithm(algorithm)}

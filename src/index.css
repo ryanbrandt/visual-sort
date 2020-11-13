@@ -102,12 +102,41 @@ icon:hover {
 }
 
 .sorting_chart-container {
-  width: 50vw;
-  height: 50vh;
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sorting_chart-container-mobile {
+  width: 90vw;
+  height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-top: 30px;
   box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .sorting_selection-option {
   padding: 20px;
   cursor: pointer;
+}
+
+/*******************
+* Charting specific
+*******************/
+.chart_bar {
+  background-color: #afafb183;
+  border-radius: 10px;
+  flex: 1;
+  max-width: 5%;
+}
+
+.active-bar {
+  background-color: #bebeff83;
 }

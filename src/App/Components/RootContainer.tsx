@@ -14,7 +14,9 @@ const RootContainer = () => {
     return (
       <Row version={1} className="app_menu">
         {MENU_ITEMS.map((item) => (
-          <div className="app_menu-item">{item}</div>
+          <div key={item} className="app_menu-item">
+            {item}
+          </div>
         ))}
       </Row>
     );
